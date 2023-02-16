@@ -1,2 +1,1 @@
-# Panorama-and-Image-Stitching
-Making Panorama
+# Panorama and Image Stitching
