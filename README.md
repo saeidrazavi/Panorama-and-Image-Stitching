@@ -107,14 +107,7 @@ below you can see the result of these procedure :
  
 * Result 
 
-<table>
-  <tr>
-    <td>forground video</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/67091916/219787672-067abb47-0bd4-4eed-8ab9-e9f386dc8d2a.gif" width="400" height=200></td>
-  </tr>
- </table>
+<img src="https://user-images.githubusercontent.com/67091916/219789176-ad4d741f-a680-4aba-97d2-932e6df897c7.gif" width="400" height="250"/>
 
 ## Remove camera shake
 
@@ -134,12 +127,6 @@ to do so, for each element of homography matrix, we use polynomial approximation
 * Result 
 
 
-<table>
-  <tr>
-    <td>smoothed video</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/67091916/219787745-b0949aa9-524d-4384-a58e-23fc18fcac5b.gif" width="400" height=200></td>
-  </tr>
- </table>
+<img src="https://user-images.githubusercontent.com/67091916/219789212-1bb4b253-7104-41d3-bfba-18a78dd65620.gif" width="400" height="250"/>
+
 
