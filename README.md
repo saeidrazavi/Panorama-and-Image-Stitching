@@ -107,6 +107,15 @@ below you can see the result of these procedure :
  
 * Result 
 
+<table>
+  <tr>
+    <td>forground video</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/67091916/219787672-067abb47-0bd4-4eed-8ab9-e9f386dc8d2a.gif" width="400" height=200></td>
+  </tr>
+ </table>
+
 ## Remove camera shake
 
 if we assume that camera parameters change smoothly and obtain a temporally smoothed estimate for each camera parameter, we reach shake less video.
@@ -123,4 +132,14 @@ to do so, for each element of homography matrix, we use polynomial approximation
  </table>
 
 * Result 
+
+
+<table>
+  <tr>
+    <td>smoothed video</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/67091916/219787745-b0949aa9-524d-4384-a58e-23fc18fcac5b.gif" width="400" height=200></td>
+  </tr>
+ </table>
 
