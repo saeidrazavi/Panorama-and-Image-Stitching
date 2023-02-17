@@ -1,3 +1,3 @@
 # Panorama and Image Stitching
 
-will soon be updated...
+In this project, our goal is to make panorama from the original
