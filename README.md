@@ -91,3 +91,36 @@ in this section we want to make a video from moving objects .in each frame we ca
 below you can see the result of these procedure :
 
 
+<table>
+  <tr>
+    <td>Mask after threshold</td>
+     <td>Opening morphology</td>
+     <td>Closing morphology</td>
+  </tr>
+  <tr>
+    <td><img src= "https://user-images.githubusercontent.com/67091916/219771003-0ce81241-1ce9-4216-a1d7-d209a0e2a850.jpg" width=400 height=200></td>
+    <td><img src="https://user-images.githubusercontent.com/67091916/219771019-33413921-4006-4db6-a8fe-f8e4386ba097.jpg" width=400 height=200></td>
+    <td><img src="https://user-images.githubusercontent.com/67091916/219771026-6fe03acf-09c4-40f6-a1e3-9cb484e61438.jpg" width=400 height=200></td>
+
+  </tr>
+ </table>
+ 
+* Result 
+
+## Remove camera shake
+
+if we assume that camera parameters change smoothly and obtain a temporally smoothed estimate for each camera parameter, we reach shake less video.
+
+to do so, for each element of homography matrix, we use polynomial approximation. to say it more accurately, for example for element(1,1), we have 900 data from 900 homography matrix and we have to fit the function that best approximate the model. in this section, i use `savgol-filter` from `scipy.signal` library and fit the polynomial with 7 degree and kernel size of 351 for these 900data. for better intuition about smoothing noisy data see the picture below :
+
+<table>
+  <tr>
+    <td>smoothing data</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/67091916/219778183-ca4cdf69-607b-4855-8f94-fb9a564a9cdb.png" width="400" height=200></td>
+  </tr>
+ </table>
+
+* Result 
+
